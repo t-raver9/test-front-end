@@ -14,7 +14,7 @@ const GET_MESSAGE = gql`
 function App() {
   const [count, setCount] = useState(0);
 
-  const { loading, error, data } = useQuery(GET_MESSAGE, {
+  const { data } = useQuery(GET_MESSAGE, {
     variables: { id: count },
   });
 
